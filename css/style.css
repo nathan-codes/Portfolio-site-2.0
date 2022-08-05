@@ -71,6 +71,19 @@ padding: 0px;
     text-transform: capitalize;
     font-size: 30px;
    
+}  
+
+.aside .logo a::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-bottom: red;
+    border-left:red ;
+    bottom: 0;
+    left: 0;
+
+   
 }
 
 .aside .logo a {
