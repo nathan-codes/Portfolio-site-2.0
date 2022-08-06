@@ -37,7 +37,7 @@ padding: 0px;
     box-sizing: border-box;
 }
 
-.section {
+.home {
     background-color: var(--bg-black-900);
     min-height: 100vh;
     display: flex;
@@ -148,7 +148,65 @@ padding: 0px;
     padding-right: 20px;
 }
 
-.section .row #intro {
+.home .row #intro {
     height: 60vh;
+    
 }
+
+.home .row #title {
+    text-decoration: none;
+    color: var(--text-black-900);
+    font-weight: 700; 
+    font-size: 40px;
+    letter-spacing: 1px;
+    
+} 
+
+.home .row #profession {
+    text-decoration: none;
+    color: var(--text-black-900);
+    font-weight: 700; 
+    font-size: 30px;
+    letter-spacing: 1px;
+
+}
+
+.home .row span{
+    color: var(--skin-color);
+    
+}
+
+.home .row #name{
+    color: var(--skin-color);
+    font-family: 'Clicker Script', cursive;
+}
+
+
+.home .row p{
+    width: 95%;
+    font-size: 1.2em;
+    color: var(--text-black-700);
+    
+}
+
+
+.home .btn  {
+    border:none;
+    background-color: var(--skin-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+
+.home .btn a{
+    text-decoration: none;
+}
+
+
+.home .btn:hover{
+    background-color: var(--bg-black-900);
+    border: 1px solid var(--skin-color);
+    color: var(--text-black-900);   
+}
+
 
