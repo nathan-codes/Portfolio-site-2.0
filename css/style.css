@@ -29,7 +29,7 @@ body {
 
 }
 
-ol,ul{
+.aside .nav-links ul{
 padding: 0px;
 }
 ::before,
@@ -40,12 +40,15 @@ padding: 0px;
 .section {
     background-color: var(--bg-black-900);
     min-height: 100vh;
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     left: 270px;
     top: 0px;
     right: 0px;
     opacity: 1;
+    justify-content: center;
+
 
 }
 
@@ -73,18 +76,7 @@ padding: 0px;
    
 }  
 
-.aside .logo a::before{
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-bottom: red;
-    border-left:red ;
-    bottom: 0;
-    left: 0;
 
-   
-}
 
 .aside .logo a {
     text-decoration: none;
@@ -97,10 +89,38 @@ padding: 0px;
     
 }
 
+.aside .logo a::before{
+    content: '';
+    
+    position: absolute; 
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left:5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;  
+}
+
+
+.aside .logo a::after{
+    content: '';
+    position: absolute; 
+    width: 20px;
+    height: 20px;
+    border-right: 5px solid var(--skin-color);
+    border-top:5px solid var(--skin-color) ;
+    right: 0;
+    top: 0;  
+}
+
 .aside .logo span {
     font-family: 'Clicker Script', cursive;
     font-size: 50px;
  
+}
+
+.aside ul .active {
+    color: var(--skin-color);
 }
 
 .aside li {
@@ -126,5 +146,9 @@ padding: 0px;
 
 .aside ul i {
     padding-right: 20px;
+}
+
+.section .row #intro {
+    height: 60vh;
 }
 
