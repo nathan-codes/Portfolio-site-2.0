@@ -7,7 +7,6 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-
 }
 
 
@@ -131,9 +130,6 @@ padding: 0px;
     text-transform: capitalize;
     padding-bottom: 0.3rem;
     width: 120px;
-    
-
-
 }
 
 .aside ul a {
@@ -189,6 +185,9 @@ padding: 0px;
     color: var(--text-black-700);
     
 }
+.home .btn a{
+    text-decoration: none;
+}
 
 
 .home .btn  {
@@ -196,27 +195,21 @@ padding: 0px;
     background-color: var(--skin-color);
     font-size: 1.2rem;
     text-decoration: none;
+    transition: 0.3s all ease-out;
     
 }
 
-.home .btn a{
-    text-decoration: none;
-}
 
 
 .home .btn:hover{
-    background-color: var(--bg-black-900);
-    border: 1px solid var(--skin-color);
-    color: var(--text-black-900);   
+    transform: scale(1.05);
+    background-color: var(--skin-color);
+   
 }
 
 .home .row img {
     border-radius: 10px;
     height: 70%;
-
-    
-    
-    
 }
 
 .home .row #intro-img {
@@ -224,10 +217,7 @@ padding: 0px;
  justify-content: center;
  align-items: center;
  position: relative;
-
 }
-
-
 .home .row #intro-img::before {
     content: '';
     
@@ -239,11 +229,8 @@ padding: 0px;
     bottom: 0;
     right: 0;  
 }
-
-
 .home .row #intro-img::after {
-    content: '';
-    
+    content: '';    
     position: absolute; 
     width: 100px;
     height: 100px;
